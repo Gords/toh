@@ -1,10 +1,11 @@
-// main.js
+// src/js/main.js
 
 document.addEventListener('DOMContentLoaded', function() {
     const mainContent = document.getElementById('content');
     const navLinks = document.querySelectorAll('nav a');
     const body = document.body;
 
+    // Function to load a page via AJAX
     function loadPage(url, pushState = true) {
         fetch(url)
             .then(response => {
@@ -25,6 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     // Update body class to apply page-specific styles
                     body.className = newBodyClass;
+
+                    // Re-initialize any new scripts or event listeners if necessary
+                    if (typeof initModal === 'function') {
+                        initModal(); // Initialize modal after loading new content
+                    }
                 } else {
                     mainContent.innerHTML = '<p>Content not found.</p>';
                 }
@@ -46,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
+    // Event Listener for Navigation Links
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -63,5 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial load
     if (!window.location.hash) {
         history.replaceState({ url: window.location.href }, '', window.location.href);
+    }
+
+    // Initialize modal on initial page load
+    if (typeof initModal === 'function') {
+        initModal();
     }
 });

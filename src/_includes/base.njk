@@ -6,7 +6,6 @@
     <title>{% if title %}{{ title }} - {% endif %}Threads of Hybridity</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet">
-    <script src="/js/main.js" defer></script>
 </head>
 <body class="{{ class | default('') }}">
     {% include 'header.njk' %}
@@ -14,5 +13,10 @@
         {{ content | safe }}
     </main>
     {% include 'footer.njk' %}
+    
+    <!-- Include main.js -->
+    <script src="/js/main.js" defer></script>
+    <!-- Include modal.js -->
+    <script src="/js/modal.js" defer></script>
 </body>
 </html>
