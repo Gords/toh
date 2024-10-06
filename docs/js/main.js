@@ -8,15 +8,27 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(html => {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
-                const newContent = doc.querySelector('main').innerHTML;
-                mainContent.innerHTML = newContent;
+                const newContent = doc.querySelector('main');
+                if (newContent) {
+                    mainContent.innerHTML = newContent.innerHTML;
+                } else {
+                    mainContent.innerHTML = '<p>Content not found.</p>';
+                }
 
                 if (pushState) {
                     history.pushState({url: url}, "", url);
                 }
                 
-                const h1 = mainContent.querySelector('h1');
-                document.title = (h1 ? h1.textContent : 'Threads of Hybridity') + ' - Threads of Hybridity';
+                const title = doc.querySelector('title');
+                if (title) {
+                    document.title = title.textContent;
+                } else {
+                    document.title = 'Threads of Hybridity';
+                }
+            })
+            .catch(error => {
+                console.error('Error loading page:', error);
+                mainContent.innerHTML = '<p>Sorry, an error occurred while loading the page.</p>';
             });
     }
 
