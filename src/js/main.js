@@ -1,24 +1,38 @@
+// main.js
+
 document.addEventListener('DOMContentLoaded', function() {
     const mainContent = document.getElementById('content');
     const navLinks = document.querySelectorAll('nav a');
+    const body = document.body;
 
     function loadPage(url, pushState = true) {
         fetch(url)
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok.');
+                }
+                return response.text();
+            })
             .then(html => {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
-                const newContent = doc.querySelector('main');
-                if (newContent) {
-                    mainContent.innerHTML = newContent.innerHTML;
+                const newMainContent = doc.querySelector('main');
+                const newBodyClass = doc.body.className || '';
+
+                if (newMainContent) {
+                    // Replace main content
+                    mainContent.innerHTML = newMainContent.innerHTML;
+
+                    // Update body class to apply page-specific styles
+                    body.className = newBodyClass;
                 } else {
                     mainContent.innerHTML = '<p>Content not found.</p>';
                 }
 
                 if (pushState) {
-                    history.pushState({url: url}, "", url);
+                    history.pushState({ url: url }, "", url);
                 }
-                
+
                 const title = doc.querySelector('title');
                 if (title) {
                     document.title = title.textContent;
@@ -48,6 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initial load
     if (!window.location.hash) {
-        history.replaceState({url: window.location.href}, '', window.location.href);
+        history.replaceState({ url: window.location.href }, '', window.location.href);
     }
 });

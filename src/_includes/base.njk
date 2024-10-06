@@ -8,13 +8,11 @@
     <link href="/css/styles.css" rel="stylesheet">
     <script src="/js/main.js" defer></script>
 </head>
-<body>
+<body class="{{ class | default('') }}">
     {% include 'header.njk' %}
-    
     <main id="content">
         {{ content | safe }}
     </main>
-    
     {% include 'footer.njk' %}
 </body>
 </html>
