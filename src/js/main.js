@@ -3,16 +3,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('nav a');
 
     function loadPage(url, pushState = true) {
-        htmx.ajax('GET', url, {
-            target: mainContent,
-            select: '#content'  // Only select the content within the main element
-        }).then(() => {
-            if (pushState) {
-                history.pushState({url: url}, "", url);
-            }
-            const h2 = mainContent.querySelector('h2');
-            document.title = (h2 ? h2.textContent : 'Threads of Hybridity') + ' - Threads of Hybridity';
-        });
+        fetch(url)
+            .then(response => response.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const newContent = doc.querySelector('main').innerHTML;
+                mainContent.innerHTML = newContent;
+
+                if (pushState) {
+                    history.pushState({url: url}, "", url);
+                }
+                
+                const h1 = mainContent.querySelector('h1');
+                document.title = (h1 ? h1.textContent : 'Threads of Hybridity') + ' - Threads of Hybridity';
+            });
     }
 
     navLinks.forEach(link => {
