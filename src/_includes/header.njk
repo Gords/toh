@@ -10,8 +10,12 @@
             <li><a href="/{{ locale }}/about">{{ i18n[locale].site.nav.about }}</a></li>
             <li><a href="/{{ locale }}/collection">{{ i18n[locale].site.nav.collection }}</a></li>
             <li><a href="/{{ locale }}/exhibits">{{ i18n[locale].site.nav.exhibits }}</a></li>
+            <li><a href="/{{ locale }}/about">{{ i18n[locale].site.nav.about }}</a></li>
+            <li><a href="/{{ locale }}/collection">{{ i18n[locale].site.nav.collection }}</a></li>
+            <li><a href="/{{ locale }}/exhibits">{{ i18n[locale].site.nav.exhibits }}</a></li>
         </ul>
     </nav>
+    <h1 class="site-title"><a href="/{{ locale }}/">{{ i18n[locale].site.title }}</a></h1>
     <h1 class="site-title"><a href="/{{ locale }}/">{{ i18n[locale].site.title }}</a></h1>
     <nav class="right-nav">
         <ul>
@@ -28,4 +32,11 @@
             </li>
         </ul>
     </nav>
+    <div class="language-selector">
+        <select onchange="window.location.href=this.value">
+            <option value="/en{{ page.url }}" {% if locale == 'en' %}selected{% endif %}>English</option>
+            <option value="/es{{ page.url }}" {% if locale == 'es' %}selected{% endif %}>Español</option>
+            <option value="/ja{{ page.url }}" {% if locale == 'ja' %}selected{% endif %}>日本語</option>
+        </select>
+    </div>
 </header>
