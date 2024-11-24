@@ -3,14 +3,17 @@ layout: base.njk
 title: Home - Threads of Hybridity
 ---
 
-## Project Overview
+<div class="content-container">
 
-This project explores the complexity of Nikkei identity through Ñanduti, a traditional Paraguayan lace, and how this cultural material can reflect and transform the identity of the Nikkei community in Paraguay.
+## Descripción del proyecto
 
-## Ñanduti: A Cultural Bridge
+Este proyecto explora la complejidad de la identidad Nikkei a través del Ñanduti, un encaje tradicional paraguayo, analizando cómo este material cultural refleja y transforma la identidad de la comunidad Nikkei en Paraguay.
 
-Ñanduti is a lace with Spanish origins, derived from a lace called Tenerife, from the Canary Islands. The indigenous people of Paraguay who learned it from the Spanish incorporated motifs inspired by Paraguayan scenes, nature, traditions, and daily life, and called it Ñanduti, which means "spider web" in Guarani, the second official language of Paraguay, giving it its own identity.
+## Ñanduti: Un puente cultural
 
-## The Nikkei Experience
+El Ñanduti es un encaje de origen español, derivado de una técnica llamada Tenerife. Al ser introducido en Paraguay durante el período colonial, los pueblos indígenas lo adaptaron, incorporando motivos inspirados en la naturaleza, las tradiciones y la vida cotidiana de Paraguay. Lo llamaron Ñanduti, que significa "telaraña" en guaraní, el segundo idioma oficial de Paraguay, dándole al encaje una identidad distintivamente paraguaya.
 
-Like Ñanduti, the collective identity of Japanese immigrants and their descendants is interwoven with threads of diverse traditions, forming a pattern that honors both their roots and the experiences acquired in new lands.
+## La Experiencia Nikkei
+
+Al igual que el Ñanduti, la identidad colectiva de los inmigrantes japoneses y sus descendientes está entrelazada con hilos de diversas tradiciones, formando un patrón que honra tanto sus raíces culturales como las experiencias adquiridas en nuevas tierras.
+</div>

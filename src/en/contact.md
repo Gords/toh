@@ -3,12 +3,14 @@ layout: base.njk
 title: Contact
 ---
 
-## Contact Us
+<div class="content-container">
+
+## Contact
 
 Feel free to reach out through the following channels:
 
-- **Email:** [emifukuoka@example.com](mailto:emifukuoka@example.com)
-- **Phone:** (123) 456-7890
+- **Email:** [fukuoka.em@gmail.com](mailto:emifukuoka@example.com)
+- **Instagram:** [@emifukuokag](https://www.instagram.com/emifukuokag/)
 
 Alternatively, you can use the contact form below:
 
@@ -25,3 +27,4 @@ Alternatively, you can use the contact form below:
     <button type="submit">Send Message</button>
 </form>
 
+</div>

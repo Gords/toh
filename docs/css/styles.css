@@ -109,6 +109,8 @@ main {
     width: 100%;
     box-sizing: border-box;
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Home Page Background Image */
@@ -432,5 +434,34 @@ footer a:hover {
 @media (max-width: 768px) {
     .language-selector {
         margin: 10px 0;
+    }
+}
+
+/* Add content container for text */
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Flyer image styles */
+.flyer {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 0 15px;
+    }
+    
+    .flyer {
+        max-width: 100%;
     }
 }

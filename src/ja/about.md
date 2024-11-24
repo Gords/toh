@@ -3,14 +3,17 @@ layout: base.njk
 title: Home - Threads of Hybridity
 ---
 
-## Project Overview
+<div class="content-container">
 
-This project explores the complexity of Nikkei identity through Ñanduti, a traditional Paraguayan lace, and how this cultural material can reflect and transform the identity of the Nikkei community in Paraguay.
+## プロジェクトの概要
 
-## Ñanduti: A Cultural Bridge
+このプロジェクトは、パラグアイの伝統的なレースであるニャンドゥティを通じて、日系人のアイデンティティの複雑さを探り、この文化的素材がパラグアイの日系人社会のアイデンティティをどのように反映し、変容させるかを考察します。
 
-Ñanduti is a lace with Spanish origins, derived from a lace called Tenerife, from the Canary Islands. The indigenous people of Paraguay who learned it from the Spanish incorporated motifs inspired by Paraguayan scenes, nature, traditions, and daily life, and called it Ñanduti, which means "spider web" in Guarani, the second official language of Paraguay, giving it its own identity.
+## ニャンドゥティ
 
-## The Nikkei Experience
+ニャンドゥティはスペイン起源のレースで、テネリフェと呼ばれる技法から生まれました。植民地時代にパラグアイに伝わると、先住民たちはこれをアレンジし、パラグアイの自然や伝統、日常生活からインスピレーションを得た模様を取り入れました。「ニャンドゥティ」という名前は、パラグアイの第二公用語であるグアラニー語で「蜘蛛の巣」を意味し、このレースはパラグアイ独自のアイデンティティを持つものとなりました。
 
-Like Ñanduti, the collective identity of Japanese immigrants and their descendants is interwoven with threads of diverse traditions, forming a pattern that honors both their roots and the experiences acquired in new lands.
+## 日系の物語
+
+ニャンドゥティと同じように、日本から移住した人々とその子孫たちのアイデンティティは、さまざまな伝統の糸が織り交ぜられたものです。それは、自分たちの文化的なルーツと新しい土地で得た経験の両方を尊重する模様を作り上げています。
+</div>

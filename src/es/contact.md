@@ -3,25 +3,28 @@ layout: base.njk
 title: Contact
 ---
 
-## Contact Us
+<div class="content-container">
 
-Feel free to reach out through the following channels:
+## Contacto
 
-- **Email:** [emifukuoka@example.com](mailto:emifukuoka@example.com)
-- **Phone:** (123) 456-7890
+Puede contactarme a través de los siguientes medios:
 
-Alternatively, you can use the contact form below:
+- **Email:** [fukuoka.em@gmail.com](mailto:fukuoka.em@gmail.com)
+- **Instagram:** [@emifukuokag](https://www.instagram.com/emifukuokag/)
+
+Alternativamente, puede usar el siguiente formulario de contacto:
 
 <form action="/submit-form" method="POST">
-    <label for="name">Name:</label><br/>
+    <label for="name">Nombre:</label><br/>
     <input type="text" id="name" name="name" required><br/><br/>
     
     <label for="email">Email:</label><br/>
     <input type="email" id="email" name="email" required><br/><br/>
     
-    <label for="message">Message:</label><br/>
+    <label for="message">Mensaje:</label><br/>
     <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
     
-    <button type="submit">Send Message</button>
+    <button type="submit">Enviar Mensaje</button>
 </form>
 
+</div>
