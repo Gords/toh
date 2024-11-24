@@ -7,24 +7,34 @@ title: Contact
 
 ## お問い合わせ
 
-以下のチャンネルからお気軽にお問い合わせください。
-
-- **Email:** [fukuoka.em@gmail.com](mailto:fukuoka.em@gmail.com)
-- **Instagram:** [@emifukuokag](https://www.instagram.com/emifukuokag/)
-
-代わりに、以下のお問い合わせフォームをご利用ください。
-
-<form action="/submit-form" method="POST">
-    <label for="name">お名前:</label><br/>
-    <input type="text" id="name" name="name" required><br/><br/>
+<div class="contact-info">
+    <p>以下のチャンネルからお気軽にお問い合わせください。</p>
     
-    <label for="email">メールアドレス:</label><br/>
-    <input type="email" id="email" name="email" required><br/><br/>
+    <ul class="contact-links">
+        <li><strong>Email:</strong> <a href="mailto:fukuoka.em@gmail.com">fukuoka.em@gmail.com</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/emifukuokag" target="_blank">@emifukuokag</a></li>
+    </ul>
+</div>
+
+<p>代わりに、以下のお問い合わせフォームをご利用ください。</p>
+
+<form class="contact-form" action="/submit-form" method="POST">
+    <div class="form-group">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" required>
+    </div>
     
-    <label for="message">メッセージ:</label><br/>
-    <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+    <div class="form-group">
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" required>
+    </div>
     
-    <button type="submit">メッセージを送信</button>
+    <div class="form-group">
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+    
+    <button type="submit" class="submit-button">メッセージを送信</button>
 </form>
 
 </div>

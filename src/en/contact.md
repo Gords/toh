@@ -5,26 +5,36 @@ title: Contact
 
 <div class="content-container">
 
-## Contact
+# Contact
 
-Feel free to reach out through the following channels:
-
-- **Email:** [fukuoka.em@gmail.com](mailto:emifukuoka@example.com)
-- **Instagram:** [@emifukuokag](https://www.instagram.com/emifukuokag/)
-
-Alternatively, you can use the contact form below:
-
-<form action="/submit-form" method="POST">
-    <label for="name">Name:</label><br/>
-    <input type="text" id="name" name="name" required><br/><br/>
+<div class="contact-info">
+    <p>Feel free to reach out through the following channels:</p>
     
-    <label for="email">Email:</label><br/>
-    <input type="email" id="email" name="email" required><br/><br/>
+    <ul class="contact-links">
+        <li><strong>Email:</strong> <a href="mailto:fukuoka.em@gmail.com">fukuoka.em@gmail.com</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/emifukuokag" target="_blank">@emifukuokag</a></li>
+    </ul>
+</div>
+
+<p>Alternatively, you can use the contact form below:</p>
+
+<form class="contact-form" action="/submit-form" method="POST">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
     
-    <label for="message">Message:</label><br/>
-    <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
     
-    <button type="submit">Send Message</button>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+    
+    <button type="submit" class="submit-button">Send Message</button>
 </form>
 
 </div>
