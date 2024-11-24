@@ -9,7 +9,7 @@ title: Home - Threads of Hybridity
 
 Este proyecto explora la complejidad de la identidad Nikkei a través del Ñanduti, un encaje tradicional paraguayo, analizando cómo este material cultural refleja y transforma la identidad de la comunidad Nikkei en Paraguay.
 
-## Ñanduti: Un puente cultural
+## Ñanduti
 
 El Ñanduti es un encaje de origen español, derivado de una técnica llamada Tenerife. Al ser introducido en Paraguay durante el período colonial, los pueblos indígenas lo adaptaron, incorporando motivos inspirados en la naturaleza, las tradiciones y la vida cotidiana de Paraguay. Lo llamaron Ñanduti, que significa "telaraña" en guaraní, el segundo idioma oficial de Paraguay, dándole al encaje una identidad distintivamente paraguaya.
 

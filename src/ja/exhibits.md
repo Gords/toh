@@ -10,9 +10,9 @@ title: Exhibits
 
 <img src="/images/background/flyer.png" alt="Threads of Hybridity" class="flyer" loading="lazy">
 
-This exhibition explores the links between Paraguayan Ñanduti lace and the cultural identity of the Nikkei community. It traces the origins of this craft, which was introduced to Paraguay from Spain during the colonial period, and traces Ñanduti's journey to Japan through Paraguayan and Japanese Nikkei culture.
+この展覧会は、パラグアイのニャンドゥティの編み物とニッケイコミュニティの文化身分との関連を探求します。この技術の起源を追いかけ、これが16世紀にスペインからパラグアイに紹介されたことを追いかけ、ニャンドゥティの日本への旅をパラグアイと日本のニッケイ文化を通じて追いかけます。
 
-The exhibition first compares traditional pieces made by Paraguayan artisans with those by members of the Ñanduti Association in Japan. The exhibition will also feature a capsule collection of contemporary interpretations of Ñanduti, created by Paraguayan fashion graduate student Emi Fukuoka in collaboration with members of the Japanese Ñanduti Association.
+この展覧会は、パラグアイのアーティサンと日本のニャンドゥティ協会のメンバーによって作られた伝統的な作品を比較します。また、パラグアイのファッション修士課程の学生であるEmi Fukuokaがニャンドゥティの現代の解釈を作成したカプセルコレクションを展示します。
 
 </div>
 
