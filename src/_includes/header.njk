@@ -1,15 +1,31 @@
+{%- set locale = page.filePathStem | getLocale -%}
+{%- set languageNames = {
+    'en': 'English',
+    'es': 'Español',
+    'ja': '日本語'
+} -%}
 <header>
     <nav class="left-nav">
         <ul>
-            <li><a href="/about">About</a></li>
-            <li><a href="/collection">Collection</a></li>
-            <li><a href="/exhibits">Exhibits</a></li>
+            <li><a href="/{{ locale }}/about">{{ i18n[locale].site.nav.about }}</a></li>
+            <li><a href="/{{ locale }}/collection">{{ i18n[locale].site.nav.collection }}</a></li>
+            <li><a href="/{{ locale }}/exhibits">{{ i18n[locale].site.nav.exhibits }}</a></li>
         </ul>
     </nav>
-    <h1 class="site-title"><a href="/">Threads of Hybridity</a></h1>
+    <h1 class="site-title"><a href="/{{ locale }}/">{{ i18n[locale].site.title }}</a></h1>
     <nav class="right-nav">
         <ul>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/{{ locale }}/contact">{{ i18n[locale].site.nav.contact }}</a></li>
+            <li class="language-selector">
+                <div class="language-select">
+                    <span class="selected-language">{{ languageNames[locale] }}</span>
+                    <div class="language-dropdown">
+                        <a href="#" data-lang="en" class="lang-option {% if locale === 'en' %}active{% endif %}">English</a>
+                        <a href="#" data-lang="es" class="lang-option {% if locale === 'es' %}active{% endif %}">Español</a>
+                        <a href="#" data-lang="ja" class="lang-option {% if locale === 'ja' %}active{% endif %}">日本語</a>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
 </header>

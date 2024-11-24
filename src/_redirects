@@ -1,0 +1,9 @@
+# Redirect root to English (remove extra spaces)
+/  /en/  302
+
+# Language-specific redirects (fix syntax)
+/es/*  /es/:splat  302  Country=es
+/ja/*  /ja/:splat  302  Country=ja
+
+# Default redirect (fix syntax)
+/*  /en/:splat  302
