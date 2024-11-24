@@ -5,7 +5,7 @@ title: Exhibits
 
 <div class="content-container">
 
-## Próxima Exposición
+## Próxima Exhibición
 ### Threads of Hybridity: 日系とニャンドゥティの物語
 
 <img src="/images/background/flyer.png" alt="Threads of Hybridity" class="flyer" loading="lazy">
