@@ -1,19 +1,9 @@
 ---
 layout: base.njk
-locale: en
-translationKey: exhibits
+title: Exhibits
 ---
 
-## {{ i18n[locale].exhibits.title }}
+## Current Exhibits
 
-{{ i18n[locale].exhibits.description }}
-
-{% for exhibit in i18n[locale].exhibits.list %}
-### {{ exhibit.title }}
-
-{{ exhibit.description }}
-
-**{{ i18n[locale].exhibits.dates }}**: {{ exhibit.dates }}
-**{{ i18n[locale].exhibits.location }}**: {{ exhibit.location }}
-{% endfor %}
+### Threads of Identity: Nikkei Experience in Paraguay
 

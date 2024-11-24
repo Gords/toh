@@ -1,0 +1,14 @@
+{
+  "site": {
+    "title": "Threads of Hybridity",
+    "nav": {
+      "about": "概要",
+      "collection": "コレクション",
+      "exhibits": "展示",
+      "contact": "お問い合わせ"
+    },
+    "footer": {
+      "copyright": "© 2024 EMI FUKUOKA"
+    }
+  }
+}

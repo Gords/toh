@@ -1,29 +1,27 @@
 ---
 layout: base.njk
-locale: en
-translationKey: contact
+title: Contact
 ---
 
-## {{ i18n[locale].contact.title }}
+## Contact Us
 
-{{ i18n[locale].contact.description }}
+Feel free to reach out through the following channels:
 
-<form class="contact-form">
-  <div class="form-group">
-    <label>{{ i18n[locale].contact.form.name }}</label>
-    <input type="text" name="name" required>
-  </div>
-  
-  <div class="form-group">
-    <label>{{ i18n[locale].contact.form.email }}</label>
-    <input type="email" name="email" required>
-  </div>
-  
-  <div class="form-group">
-    <label>{{ i18n[locale].contact.form.message }}</label>
-    <textarea name="message" required></textarea>
-  </div>
-  
-  <button type="submit">{{ i18n[locale].contact.form.submit }}</button>
+- **Email:** [emifukuoka@example.com](mailto:emifukuoka@example.com)
+- **Phone:** (123) 456-7890
+
+Alternatively, you can use the contact form below:
+
+<form action="/submit-form" method="POST">
+    <label for="name">Name:</label><br/>
+    <input type="text" id="name" name="name" required><br/><br/>
+    
+    <label for="email">Email:</label><br/>
+    <input type="email" id="email" name="email" required><br/><br/>
+    
+    <label for="message">Message:</label><br/>
+    <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+    
+    <button type="submit">Send Message</button>
 </form>
 

@@ -1,9 +1,10 @@
+{%- set locale = page.filePathStem | getLocale -%}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ locale }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if title %}{{ title }} - {% endif %}Threads of Hybridity</title>
+    <title>{% if title %}{{ title }} - {% endif %}{{ i18n[locale].site.title }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet">
 </head>
@@ -14,9 +15,7 @@
     </main>
     {% include 'footer.njk' %}
     
-    <!-- Include main.js -->
     <script src="/js/main.js" defer></script>
-    <!-- Include modal.js -->
     <script src="/js/modal.js" defer></script>
 </body>
 </html>

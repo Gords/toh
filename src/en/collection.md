@@ -1,25 +1,39 @@
 ---
 layout: base.njk
-locale: en
-translationKey: collection
+title: Collection - Threads of Hybridity
 ---
-
-## {{ i18n[locale].collection.title }}
-
-{{ i18n[locale].collection.description }}
-
-### {{ i18n[locale].collection.gallery.title }}
-
-{{ i18n[locale].collection.gallery.description }}
+  
+# Collection
 
 <div class="gallery">
-  {% for item in i18n[locale].collection.items %}
     <div class="gallery-item">
-      <img src="{{ item.image }}" alt="{{ item.title }}">
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.description }}</p>
+        <img src="/images/collection/1.jpg" alt="Description of Image 1" class="gallery-image" loading="lazy">
     </div>
-  {% endfor %}
+    <div class="gallery-item">
+        <img src="/images/collection/2.jpg" alt="Description of Image 2" class="gallery-image" loading="lazy">
+    </div>
+    <div class="gallery-item">
+        <img src="/images/collection/3.jpg" alt="Description of Image 3" class="gallery-image" loading="lazy">
+    </div>
+    <div class="gallery-item">
+        <img src="/images/collection/4.jpg" alt="Description of Image 4" class="gallery-image" loading="lazy">
+    </div>
+    <div class="gallery-item">
+        <img src="/images/collection/5.jpg" alt="Description of Image 5" class="gallery-image" loading="lazy">
+    </div>
+    <div class="gallery-item">
+        <img src="/images/collection/6.jpg" alt="Description of Image 6" class="gallery-image" loading="lazy">
+    </div>
+    <div class="gallery-item">
+        <img src="/images/collection/7.jpg" alt="Description of Image 7" class="gallery-image" loading="lazy">
+    </div>
+    <div class="gallery-item">
+        <img src="/images/collection/8.jpg" alt="Description of Image 8" class="gallery-image" loading="lazy">
+    </div>
+    <div class="gallery-item">
+        <img src="/images/collection/9.jpg" alt="Description of Image 9" class="gallery-image" loading="lazy">
+    </div>
+    <!-- Add more images as needed -->
 </div>
 
 <!-- Modal Structure -->

@@ -1,6 +1,7 @@
+{%- set locale = page.filePathStem | getLocale -%}
 <footer>
     <div class="footer-left">
-        <p>© 2024 EMI FUKUOKA</p>
+        <p>{{ i18n[locale].site.footer.copyright }}</p>
     </div>
     <div class="footer-right">
         <p><a href="https://www.linkedin.com/in/emifukuoka">LinkedIn</a></p>
