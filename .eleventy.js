@@ -1,20 +1,28 @@
 module.exports = function(eleventyConfig) {
-    // Copy `src/css/` to `docs/css/`
-    eleventyConfig.addPassthroughCopy("src/css");
-    
-    // Copy `src/js/` to `docs/js/`
-    eleventyConfig.addPassthroughCopy("src/js");
-  
-    // Copy `src/images/` to `docs/images/`
-    eleventyConfig.addPassthroughCopy("src/images");
-  
-    // Watch CSS files for changes
-    eleventyConfig.addWatchTarget("src/css/");
-  
-    return {
-      dir: {
-        input: "src",
-        output: "docs"
-      }
-    };
+  // Existing config
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addWatchTarget("src/css/");
+
+  // Add localization support
+  eleventyConfig.addCollection("locales", function(collection) {
+    return ["en", "es", "ja"];
+  });
+
+  // Create collections for each locale
+  ["en", "es", "ja"].forEach(locale => {
+    eleventyConfig.addCollection(locale, function(collection) {
+      return collection.getAll().filter(page => page.data.locale === locale);
+    });
+  });
+
+  return {
+    dir: {
+      input: "src",
+      output: "docs",
+      includes: "_includes",
+      data: "_data"
+    }
   };
+};
