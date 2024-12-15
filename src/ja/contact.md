@@ -18,7 +18,10 @@ title: Contact
 
 <p>代わりに、以下のお問い合わせフォームをご利用ください。</p>
 
-<form class="contact-form" action="/submit-form" method="POST">
+<form class="contact-form" method="POST" data-success-message="メッセージが送信されました！" data-error-message="エラーが発生しました。">
+    <input type="hidden" name="access_key" value="{{ env.web3FormsKey }}">
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
     <div class="form-group">
         <label for="name">お名前</label>
         <input type="text" id="name" name="name" required>

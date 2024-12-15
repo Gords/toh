@@ -18,7 +18,10 @@ title: Contact
 
 <p>Alternativamente, puede usar el siguiente formulario de contacto:</p>
 
-<form class="contact-form" action="/submit-form" method="POST">
+<form class="contact-form" method="POST" data-success-message="¡Mensaje enviado exitosamente!" data-error-message="¡Algo salió mal!">
+    <input type="hidden" name="access_key" value="{{ web3FormsKey }}">
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
     <div class="form-group">
         <label for="name">Nombre</label>
         <input type="text" id="name" name="name" required>
