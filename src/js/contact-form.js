@@ -5,19 +5,21 @@ form.appendChild(result);
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
+    
+    // Create FormData object
     const formData = new FormData(form);
-    const object = Object.fromEntries(formData);
-    object.from_name = object.name;
-    const json = JSON.stringify(object);
+    
+    // Convert to URL encoded string (instead of JSON)
+    const urlEncodedData = new URLSearchParams(formData).toString();
+    
     result.innerHTML = "Please wait...";
 
     fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
+            'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: json
+        body: urlEncodedData
     })
     .then(async (response) => {
         let json = await response.json();
@@ -38,4 +40,4 @@ form.addEventListener('submit', function(e) {
             result.style.display = "none";
         }, 5000);
     });
-}); 
+});
