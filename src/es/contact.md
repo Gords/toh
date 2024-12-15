@@ -16,29 +16,4 @@ title: Contact
     </ul>
 </div>
 
-<p>Alternativamente, puede usar el siguiente formulario de contacto:</p>
-
-<form class="contact-form" method="POST" data-success-message="Message sent successfully!" data-error-message="Something went wrong!">
-    <input type="hidden" name="access_key" value="{{ env.web3FormsKey }}">
-    <input type="hidden" name="subject" value="New Contact Form Submission">
-    <input type="checkbox" name="botcheck" style="display: none;">
-    
-    <div class="form-group">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    
-    <div class="form-group">
-        <label for="message">Mensaje</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-    
-    <button type="submit" class="submit-button">Enviar Mensaje</button>
-</form>
-
 </div>
