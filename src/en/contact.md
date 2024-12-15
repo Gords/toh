@@ -20,7 +20,8 @@ title: Contact
 
 <form class="contact-form" method="POST" data-success-message="Message sent successfully!" data-error-message="Something went wrong!">
     <input type="hidden" name="access_key" value="{{ env.web3FormsKey }}">
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    <input type="hidden" name="subject" value="New Contact Form Submission">
+    <input type="checkbox" name="botcheck" style="display: none;">
     
     <div class="form-group">
         <label for="name">Name</label>

@@ -3,10 +3,11 @@ const result = document.createElement('div');
 result.id = 'form-result';
 form.appendChild(result);
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', function(e) {
     e.preventDefault();
     const formData = new FormData(form);
     const object = Object.fromEntries(formData);
+    object.from_name = object.name;
     const json = JSON.stringify(object);
     result.innerHTML = "Please wait...";
 
@@ -19,9 +20,10 @@ form.addEventListener('submit', (e) => {
         body: json
     })
     .then(async (response) => {
-        const json = await response.json();
-        if (response.status === 200) {
+        let json = await response.json();
+        if (response.status == 200) {
             result.innerHTML = form.getAttribute('data-success-message');
+            form.reset();
         } else {
             console.log(response);
             result.innerHTML = json.message;
@@ -31,10 +33,9 @@ form.addEventListener('submit', (e) => {
         console.log(error);
         result.innerHTML = form.getAttribute('data-error-message');
     })
-    .then(() => {
-        form.reset();
+    .then(function() {
         setTimeout(() => {
             result.style.display = "none";
-        }, 3000);
+        }, 5000);
     });
 }); 
