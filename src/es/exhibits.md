@@ -14,9 +14,10 @@ Esta exhibición explora los vínculos entre el Ñanduti paraguayo y la identida
 
 La exhibición primero compara piezas tradicionales hechas por artesanos paraguayos con las realizadas por miembros de la Asociación Ñanduti en Japón. La exhibición también presentará una colección de interpretación contemporánea de Ñanduti, creada por la graduada en moda paraguaya Emi Fukuoka en colaboración con miembros de la Asociación Ñanduti japonesa.
 
+### Taller de Ñanduti
+
 <img src="/images/background/flyer-es.png" alt="Threads of Hybridity" class="flyer" loading="lazy">
 
-### Taller de Ñanduti
 **Fecha y hora:** Jueves 30 de enero, de 13:00 a 15:00\
 **Lugar:** Instituto Cervantes 2º piso\
 **Instructores:** Asociación de Ñanduti de Japón\
