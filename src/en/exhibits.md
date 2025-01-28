@@ -14,5 +14,13 @@ This exhibition explores the links between Paraguayan Ñanduti lace and the cult
 
 The exhibition first compares traditional pieces made by Paraguayan artisans with those by members of the Ñanduti Association in Japan. The exhibition will also feature a capsule collection of contemporary interpretations of Ñanduti, created by Paraguayan fashion graduate student Emi Fukuoka in collaboration with members of the Japanese Ñanduti Association.
 
+<img src="/images/background/flyer-en.png" alt="Threads of Hybridity" class="flyer" loading="lazy">
+
+### Ñanduti Workshop
+**Date and Time:** Thursday, January 30th, 1:00 PM – 3:00 PM\
+**Location:** Instituto Cervantes, 2nd Floor\
+**Instructor:** Japan Ñanduti Association\
+**Fee:** ¥2,800\
+**Registration:** toiawase@nanduti.or.jp
 </div>
 
