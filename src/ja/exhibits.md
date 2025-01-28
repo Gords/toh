@@ -19,10 +19,10 @@ title: Exhibits
 <img src="/images/background/flyer-jp.png" alt="Threads of Hybridity" class="flyer" loading="lazy">
 
 **日時：** 1月30日（木）13:00～15:00 \
-**場所：**インスティトゥト・セルバンテス 2階\
+**場所：** インスティトゥト・セルバンテス 2階\
 **指導：**（一社）日本ニャンドゥティ協会 \
-**費用：**2,800円 \
-**申し込み先：**toiawase@nanduti.or.jp
+**費用：** 2,800円 \
+**申し込み先：** toiawase@nanduti.or.jp
 
 </div>
 
